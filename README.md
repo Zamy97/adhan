@@ -20,7 +20,7 @@ This projects uses a python script which automatically calculates [adhan](https:
 Run this command:
 
 ```bash
-$ /home/pi/adhan/updateAzaanTimers.py --lat <YOUR_LAT> --lng <YOUR_LNG> --method <METHOD>
+/home/pi/adhan/updateAzaanTimers.py --lat <YOUR_LAT> --lng <YOUR_LNG> --method <METHOD>
 ```
 
 Replace the arguments above with your location information and calculation method:
