@@ -14,8 +14,8 @@ for hook in $root_dir/before-hooks.d/*; do
     $hook
 done
 
-# Play Azaan audio
-mpv --volume=150 "$AUDIO_FILE"
+# Play Azaan audio (Fixed variable name + forced audio channel path for cron)
+XDG_RUNTIME_DIR=/run/user/1000 mpv --volume=150 "$audio_path"
 
 # Run after hooks
 for hook in $root_dir/after-hooks.d/*; do
