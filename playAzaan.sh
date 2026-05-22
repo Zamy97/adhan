@@ -15,7 +15,7 @@ for hook in $root_dir/before-hooks.d/*; do
 done
 
 # Play Azaan audio
-mpg321 $audio_path
+mpv $audio_path
 
 # Run after hooks
 for hook in $root_dir/after-hooks.d/*; do
